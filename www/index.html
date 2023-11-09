@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="keys.js"></script>
     <script>
-
         let ncmb = new NCMB(appKey, clientKey);
         let TestClass = ncmb.DataStore("RegisterTest2");
         let testRecord = new TestClass();
@@ -20,7 +19,7 @@
 </head>
 
 <body>
-    <br /> This is a template for Monaca app.
+    <br /> testRecord.save().then(function(m){ alert("success:" + JSON.stringify(m)); }) .catch(function(m){ alert("fail:" + JSON.stringify(m)); });
 </body>
 
 </html>
